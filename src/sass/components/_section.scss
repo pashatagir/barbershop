@@ -1,0 +1,6 @@
+.section {
+  padding: 100px 0;
+  @include desktop {
+    padding: 130px 0;
+  }
+}
