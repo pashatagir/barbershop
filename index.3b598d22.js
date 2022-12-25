@@ -1,0 +1,2 @@
+const e=document.querySelector(".mobile-menu"),s=document.getElementById("open-menu"),i=document.getElementById("close-menu");s.addEventListener("click",(()=>{s.classList.add("is-hiden"),e.classList.remove("is-hiden"),i.classList.remove("is-hiden")})),i.addEventListener("click",(()=>{s.classList.remove("is-hiden"),e.classList.add("is-hiden"),i.classList.add("is-hiden")}));
+//# sourceMappingURL=index.3b598d22.js.map
