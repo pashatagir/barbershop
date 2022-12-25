@@ -1,3 +1,88 @@
-.header {
-  font-family: Relawey;
+.navigation {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 15px;
+  @include tablet {
+    align-items: center;
+    padding-top: 32px;
+  }
+  @include desktop {
+    padding-top: 40px;
+  }
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include desktop {
+    flex-direction: row-reverse;
+  }
+}
+
+.phone {
+  margin-right: 45px;
+}
+
+.button__booking {
+  width: 160px;
+  height: 40px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.09em;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  margin-bottom: 10px;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-40%);
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+}
+
+.mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-menu__item {
+  padding-bottom: 10px;
+}
+
+.is-hiden {
+  display: none;
+}
+
+.mobile-button {
+  @include tablet {
+    display: none;
+  }
+}
+
+.menu {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+}
+
+.menu__list {
+  display: flex;
+}
+.menu__item:not(:last-of-type) {
+  padding-right: 15px;
+  @include desktop {
+    padding-right: 30px;
+  }
 }

@@ -1,8 +1,10 @@
-.navigation__button {
+button {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  &:hover {
+  padding: 0;
+  &:hover,
+  &:focus {
     fill: var(--accent-color);
   }
 }
